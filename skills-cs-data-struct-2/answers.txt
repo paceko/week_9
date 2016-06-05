@@ -1,0 +1,86 @@
+Part 1: Discussion Questions
+
+Recursion
+
+
+1. In your own words, what is Recursion?
+When a function calls itself (while and for loop very similar)
+for i in range(1, 10):
+    print i
+
+def recursiveCount(i):
+    if(i == 10):
+        return
+    print(i)
+    recursiveCount(i+1)
+recursiveCount(1)
+
+
+2. Why is it necessary to have a Base Case?
+Otherwise it will go on until infinity. (It's where the recursion stops = base case)
+
+Graphs
+
+1. What is a Graph?
+Graphs are a computer-science data structure of interrelated nodes
+
+2. How is a Graph different from a Tree?
+Graph is like a network model where a tree is hierarchical
+
+3. Give an example of something that would be good to model with a Graph.
+Facebook 'friends'
+
+
+Performance of Different Data Structures
+
+
+1. Fill in the runtimes for the following actions for the table below:
+
+Data Structure					Index	Search	Add-R	Add-L	Pop-L	Pop-R
+Python List (Array)				O(1)	O(n)	O(1) 	O(n)	O(n)	O(1)
+Linked List	 	 	 	 	 	O(n) 	O(n)	O(1)	O(1)	O(1) 	O(n)
+Doubly-Linked List	 	 	 	O(n) 	O(n)	O(1)	O(1) 	O(1)	O(1) 	 
+Queue (as Array)				X		X	 	O(1)	X	 	O(n)	X
+Queue (as LL or DLL)			X		X	 	O(1)	X	 	O(1)	X
+Stack (as Array, LL, or DLL)	X		X	 	O(1)	X		X	 	O(1)
+Deque (as DLL)					X		X	 	O(1)	O(1) 	O(1) 	O(1)
+
+
+2. Fill in Runtime and Memory:
+
+
+
+Data Structure			Get			Add		Delete	Iterate	Memory
+Dictionary (Hash Map)	O(1)		O(1)	O(1)	O(n)	medium
+Set (Hash Map)	 	 	O(1)		O(1)	O(1)	O(n)	medium 	 	 
+Binary Search Tree	 	O(log n) 	O(n) 	O(n) 	O(1)	low
+Tree	 				O(n)		O(1)	O(1)	O(1)	low
+
+** With memory does this mean RAM? Or process? **
+
+
+Sorting
+
+1. Describe in words how the Bubble Sort algorithm works.
+This sort goes thru a list repeatedly and compairs each pair of adjacent items
+then swaps them if the order is wrong
+
+2. Describe in words how the Merge Sort algorithm works.
+It splits it into smaller and smaller lists and puts it into the correct order 
+after splitting. Usually with recursion.
+
+3. Describe in words how the Quick Sort algorithm works.
+Pick a pivot first from elft or right, then you have to make sure that everything
+on the left side of it is lower and on the right is higher. Repeat this until everything 
+is sorted.
+
+Git Branching
+
+1. Give an instance when you would use git branching.
+If you like to add some code to yours project or maybe someone else's you can branch it
+work on it and merge later if you like.
+
+2. What is a pull request?
+So you can let others know the changes you have made in a project
+
+
