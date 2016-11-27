@@ -53,8 +53,6 @@ def print_all_tree_data(tree):
 
 print_all_tree_data(root)
 
-# I thought you weren't allowed to use loops when recursing? Not sure if this is the correct way to solve this.
-
 
 # 3. Write a function that uses recursion to find the length of a list.
 
@@ -101,7 +99,6 @@ def num_nodes(tree):
     for child in tree.children:
          num_nodes(child)
     return 
-#not sure how to solve this? Do I have to create a variable? set it to 1?
 
 
 #####################################################################
